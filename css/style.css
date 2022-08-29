@@ -37,7 +37,7 @@ ul li {
     padding-left: 0;
     padding-right: 54px;
 }
-.group:after {
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
@@ -76,7 +76,6 @@ span{
     font-weight: 400;
     font-size: 16px;
     width: 600px;
-    margin-right: -40px;
 }
 #iphone {
     display: inline-block;
@@ -147,6 +146,8 @@ h4 {
     margin-right: 20px;
     width: 20px;
     height: 22px;
+    border: 0px solid;
+    border-radius: 0px;
 }
 
 #h2::before {
@@ -191,6 +192,7 @@ h4 {
     margin-top: -65px;
 }
 #background_blue {
+    overflow-x: hidden;
     background-color: rgba(0, 98, 255, 1)
 }
 .white {
@@ -215,13 +217,14 @@ img {
 .for_who {
     color: #fff;
     margin-top: 100px;
-    margin-left: 40px;
+    margin-left: 50px;
+    display: inline-block;
 }
 .for_text {
     float: right;
     color: #fff;
     margin-top: 10px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 #center {
     text-align: center;
@@ -278,6 +281,7 @@ img {
     position: absolute;
     width: 150px;
     padding-bottom: 200px;
+    overflow-x: hidden;
 }
 .overflow1 {
     right: 1px;
@@ -389,4 +393,12 @@ input {
 }
 #final {
     margin-bottom: 200px;
+}
+.block,
+.block-right {
+    width: 1000px;
+    display: inline-block;
+}
+.block-right {
+    margin-left: 300px;
 }
