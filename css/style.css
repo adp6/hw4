@@ -41,6 +41,7 @@ ul li {
     content: "";
     display: table;
     clear: both;
+    margin-bottom: 120px;
   }
 nav {
     padding-left: 980px;
